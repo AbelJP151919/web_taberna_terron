@@ -2,6 +2,7 @@ interface Plato {
   id: string;
   nombre: string;
   precio: number | null;
+  precioPesetas: number | null;
   descripcion?: string;
   alergenos?: string[];
   destacado?: boolean;
