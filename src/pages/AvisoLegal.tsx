@@ -2,44 +2,77 @@ import React from 'react';
 
 const AvisoLegal: React.FC = () => {
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12 text-white">
-      <section className="w-full bg-[#14161c] border-t border-zinc-700/80 rounded-2xl shadow-sm p-6 sm:p-10 transition-colors duration-300">
-        <h1 className="text-3xl font-bold text-[#e8e2d5] mb-6 text-center">
-          Aviso Legal
-        </h1>
-        
-        <div className="flex flex-col gap-6 text-zinc-300 leading-relaxed">
-          <p className="text-base text-center sm:text-left">
-            En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico (LSSICE), se exponen a continuación los datos identificativos del titular del sitio web:
-          </p>
+    <main className="w-full bg-[#170d0b] text-[#f3ead7] px-4 py-12">
+      <div className="max-w-4xl mx-auto">
+        {/* Cabecera roja */}
+        <section
+          aria-labelledby="aviso-heading"
+          className="bg-[#8f1d1d] rounded-2xl shadow-xl shadow-black/40 p-6 sm:p-10 text-center"
+        >
+          <h1
+            id="aviso-heading"
+            className="font-CormorantGaramond text-4xl sm:text-5xl font-bold text-[#f3ead7]"
+          >
+            Aviso Legal
+          </h1>
+        </section>
 
-          <div className="border-t border-zinc-800 my-2" />
+        {/* Hoja de papel crema */}
+        <article className="mt-8 bg-[#f3ead7] text-[#170d0b] rounded-2xl shadow-xl shadow-black/40 p-6 sm:p-10 flex flex-col divide-y divide-[#170d0b]/15">
+          <section className="pb-8">
+            <p className="text-base leading-relaxed text-[#170d0b]/80">
+              Conforme al artículo 10 de la Ley 34/2002, de 11 de julio, de
+              Servicios de la Sociedad de la Información y de Comercio
+              Electrónico (LSSICE), estos son los datos identificativos del
+              titular de este sitio web:
+            </p>
+          </section>
 
-          <ul className="list-disc pl-5 flex flex-col gap-2 text-sm text-zinc-400">
-            <li>
-              <strong className="text-zinc-200">Denominación social:</strong> Bohemia Restaurante
-            </li>
-            <li>
-              <strong className="text-zinc-200">Domicilio:</strong> Calle Jacinta García Hernández, 21, 06011 Badajoz, España
-            </li>
-            <li>
-              <strong className="text-zinc-200">Contacto:</strong> bohemiabadajoz@gmail.com
-            </li>
-            <li>
-              <strong className="text-zinc-200">Actividad:</strong> Servicios de restauración y hostelería
-            </li>
-          </ul>
+          <section className="py-8">
+            <h2 className="font-CormorantGaramond text-2xl sm:text-3xl font-bold text-[#8f1d1d] mb-3">
+              Datos del titular
+            </h2>
+            <ul className="list-disc pl-6 flex flex-col gap-2 text-base leading-relaxed text-[#170d0b]/80">
+              <li>
+                <strong className="text-[#170d0b]">Denominación social:</strong>{' '}
+                [pendiente de completar]
+              </li>
+              <li>
+                <strong className="text-[#170d0b]">NIF:</strong>{' '}
+                [pendiente de completar]
+              </li>
+              <li>
+                <strong className="text-[#170d0b]">Domicilio:</strong> C/
+                Zurbarán, 20, 06002 Badajoz, España
+              </li>
+              <li>
+                <strong className="text-[#170d0b]">Teléfono:</strong>{' '}
+                924 93 90 54
+              </li>
+              <li>
+                <strong className="text-[#170d0b]">Correo electrónico:</strong>{' '}
+                [pendiente de completar]
+              </li>
+              <li>
+                <strong className="text-[#170d0b]">Actividad:</strong> Servicios
+                de restauración y hostelería
+              </li>
+            </ul>
+          </section>
 
-          <div>
-            <h2 className="text-xl font-semibold text-white mb-2">
+          <section className="pt-8">
+            <h2 className="font-CormorantGaramond text-2xl sm:text-3xl font-bold text-[#8f1d1d] mb-3">
               Condiciones de Uso
             </h2>
-            <p className="text-sm text-zinc-400">
-              El acceso y uso de este sitio web atribuye la condición de usuario, aceptando desde dicho acceso las presentes Condiciones de Uso. La información contenida sobre la carta, menús y precios se ofrece con fines informativos y puede estar sujeta a modificaciones.
+            <p className="text-base leading-relaxed text-[#170d0b]/80">
+              Al acceder y utilizar este sitio web pasas a ser usuario y aceptas
+              estas Condiciones de Uso. La información sobre la carta, los menús
+              y los precios es meramente informativa y puede cambiar sin previo
+              aviso.
             </p>
-          </div>
-        </div>
-      </section>
+          </section>
+        </article>
+      </div>
     </main>
   );
 };
